@@ -1,4 +1,4 @@
-{% set version = '2.1.5' %}
+{% set version = "2.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sybil_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sybil/sybil_{{ version }}.tar.gz
-  sha256: 5855500cf83cd7863b68f12080250dd7e9a298c155dc4f9f6beabc83180b3eae
+  sha256: a555982c862b6ec6378796f5a020f829de94fa685bd4563dd553994faac08c15
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,14 +40,10 @@ test:
 about:
   home: http://www.cs.hhu.de/lehrstuehle-und-arbeitsgruppen/computational-cell-biology/software/sybil.html
   license: GPL-3
-  summary: This Systems Biology Package (Gelius-Dietrich et. al. (2012) <doi:10.1186/1752-0509-7-125>)
-    implements algorithms for constraint based analyses of metabolic networks, e.g.
-    flux-balance analysis (FBA), minimization of metabolic adjustment (MOMA), regulatory
-    on/off minimization (ROOM), robustness analysis and flux variability analysis. The
-    package is easily extendable for additional algorithms. Most of the current LP/MILP
-    solvers are supported via additional packages.
+  summary: This Systems Biology Package (Gelius-Dietrich et. al. (2012) <doi:10.1186/1752-0509-7-125>) implements algorithms for constraint based analyses of metabolic networks, e.g. flux-balance analysis (FBA), minimization of metabolic adjustment (MOMA), regulatory on/off minimization (ROOM), robustness analysis and flux
+    variability analysis. The package is easily extendable for additional algorithms. Most of the current LP/MILP solvers are supported via additional packages.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
