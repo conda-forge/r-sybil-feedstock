@@ -1,11 +1,11 @@
-About r-sybil
-=============
+About r-sybil-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-sybil-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.cs.hhu.de/lehrstuehle-und-arbeitsgruppen/computational-cell-biology/software/sybil.html
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-sybil-feedstock/blob/main/LICENSE.txt)
 
 Summary: This Systems Biology Package (Gelius-Dietrich et. al. (2012) <doi:10.1186/1752-0509-7-125>) implements algorithms for constraint based analyses of metabolic networks, e.g. flux-balance analysis (FBA), minimization of metabolic adjustment (MOMA), regulatory on/off minimization (ROOM), robustness analysis and flux variability analysis. The package is easily extendable for additional algorithms. Most of the current LP/MILP solvers are supported via additional packages.
 
